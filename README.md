@@ -6,10 +6,12 @@ The project also includes a scoreboard feature that stores the number of attempt
 
 **Programming Thought**:
 
-This project demonstrates important Python concepts such as loops, conditional statements, functions like input and print, exception handling using try-except, and list operations for storing scores. It also introduces basic algorithmic thinking through linear search (user guessing game) and binary search (computer guessing game).
+This project demonstrates important Python concepts such as **loops, conditional statements, functions like input and print, exception handling using try-except, and list operations** for storing scores. It also introduces basic algorithmic thinking through linear search (user guessing game) and binary search (computer guessing game).
 
 **Mathematical Thought:**
 
-Mathematically, the user guessing game behaves like a linear search with an average of about 50 attempts in a 1–100 range, while the computer guessing game uses binary search, which requires only about log₂(100) ≈ 7 attempts in the worst case.
+User Guessing Game: The game follows a **linear search** approach because the player makes guesses one at a time until the correct number is found. The number of attempts depends on the player's guessing strategy and cannot be predetermined.
+
+Computer Guessing Game: The game uses the **binary search algorithm**. After each guess, the search range is divided into two halves based on the user's feedback ("too high" or "too low"). The mathematical complexity is O(log₂ n), where n is the size of the search range, making it much more efficient than linear search.
 
 Overall, we thought this project is a good demonstration of beginner-level Python programming combined with simple algorithms and user interaction.
