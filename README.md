@@ -1,4 +1,5 @@
-**Guessing a Number**
+                                          **Guessing a Number**
+
 This project is a simple Python-based guessing game that contains two interactive parts. In the first part, the computer randomly generates a number between 1 and 100, and the user has to guess it. The program guides the user by giving hints such as “too low” or “too high” after each guess. It also keeps track of the number of valid attempts and uses error handling to manage invalid inputs like letters or symbols so that the program does not crash.
 
 In the second part of the project, the roles are reversed. The user thinks of a number between 1 and 100, and the computer tries to guess it. The computer uses an efficient strategy called binary search, where it always guesses the middle value of the current range and then adjusts the range based on user feedback. This makes the guessing process very fast and reduces the number of attempts significantly.
