@@ -4,11 +4,11 @@ In the second part of the project, the roles are reversed. The user thinks of a 
 
 The project also includes a scoreboard feature that stores the number of attempts taken in both games. It helps track performance and shows how many attempts were needed in each round. Additionally, it displays the best score achieved, which is the minimum number of attempts across games.
 
-Programming Insight:
+**Programming Thought**:
 
 This project demonstrates important Python concepts such as loops, conditional statements, functions like input and print, exception handling using try-except, and list operations for storing scores. It also introduces basic algorithmic thinking through linear search (user guessing game) and binary search (computer guessing game).
 
-Mathematical Insight:
+**Mathematical Thought:**
 
 Mathematically, the user guessing game behaves like a linear search with an average of about 50 attempts in a 1–100 range, while the computer guessing game uses binary search, which requires only about log₂(100) ≈ 7 attempts in the worst case.
 
