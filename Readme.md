@@ -24,15 +24,15 @@ The project also includes a scoreboard that records the number of attempts taken
 
 This project demonstrates the following Python concepts:
 
-- Variables
-- While loops
-- Conditional statements (if, elif, else)
-- User input using input()
-- Output using print()
-- Exception handling using try-except
-- Lists for storing scores
-- f-strings for formatted output
-- Random number generation
+- Variables : Store values (like numbers, attempts, or scores) that can change during the program.
+- While loops : Repeat code again and again until a condition becomes false.
+- Conditional statements (if, elif, else) : Make decisions in the program based on conditions.
+- User input using input() : Takes information from the user while the program is running.
+- Output using print() : Shows messages or results on the screen.
+- Exception handling using try-except : Prevents the program from crashing when an error happens (like invalid input).
+- Lists for storing scores : Store multiple values in one place (like scores of games).
+- f-strings for formatted output : Easy way to include variables inside text when printing.
+- Random number generation : Generates unpredictable numbers using the random module.
 
 ## Mathematical Concepts
 

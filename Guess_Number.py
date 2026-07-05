@@ -1,25 +1,28 @@
+###################################### User Guessing Number ############################################
+
+
 #To generate the random numbers or to fix the secret number between 1 to 100
 import random
 
-# stores user guessing attempts
+# stores user guessing attempts. Here using the List[]
 user_scores = []
 # stores computer guessing attempts
 computer_scores = []    
 
 #Initialized secret number between 1 to 100
-secret_number_between = random.randint(1,100) 
+secret_number = random.randint(1,100) 
 #Initialize the attempts to 0
 attempts = 0 
 
-# Just to tell what you have to do
+# Just to tell user to what you have to do
 print("Guess the number between 1 to 100!") 
 
 #This is the while loop. Let's start to loop until guessing is True
 while True : 
     try:
         # initialized input guessing number to "guess"
-        guess = int (input("Enter your guess: ")) 
-
+        guess = int (input("Enter your guess: "))
+    
         #Let's start comparison with random number generated to guessing number
         if guess < 1 or guess > 100:
             #if it is greater than 100 or less than 100, this sentence pop_up
@@ -29,16 +32,13 @@ while True :
         #If guessed number is wrong attempt initialized to +=1
         attempts += 1 
 
-        # Calculate how far the guess is from the secret number
-        difference = abs(secret_number_between - guess)
-
         #if guessed value less than secret number
-        if guess < secret_number_between: 
+        if guess < secret_number : 
             #To tell user to "You are guessing number which is lower than secret number
             print("You are guessing too low!") 
 
         # if guessed number is greater than secret number
-        elif guess > secret_number_between: 
+        elif guess > secret_number : 
             # To tell user to "You are guessing number which is greater than secret number"
             print("You are guessing too high!") 
 
@@ -60,7 +60,7 @@ while True :
         attempts -= 1 
 
 
-########################################Computer Turn to Guess Now######################################
+######################################## Computer Turn to Guess Now ######################################
 
 # We are writing a program here to computer to guess number what user thinking
 print("\n\n\n Hey! It's My turn to Guess")
@@ -120,7 +120,7 @@ else:
     # Explain possible issue with user feedback
     print("Did you change your number or give inconsistent hints?")
 
-#######################################SCORE BOARD###################################################
+####################################### SCORE BOARD ###################################################
 
 # Final Scoreboard
 print("\n+--------------------------------------+------------+")
@@ -129,14 +129,14 @@ print("+--------------------------------------+------------+")
 
 # User Guessing Game
 if user_scores:
-    print(f"| {'User Guessing Game':<36} | {user_scores[0]:<10} |") #36 is column width
+    print(f"| {'User Guessing Number':<36} | {user_scores[0]:<10} |") #36 is column width
 else:
-    print(f"| {'User Guessing Game':<36} | {'Not Played':<10} |")
+    print(f"| {'User Guessing Number':<36} | {'Not Played':<10} |")
 
 # Computer Guessing Game
 if computer_scores:
-    print(f"| {'Computer Guessing Game':<36} | {computer_scores[0]:<10} |")
+    print(f"| {'Computer Guessing Number':<36} | {computer_scores[0]:<10} |")
 else:
-    print(f"| {'Computer Guessing Game':<36} | {'Not Played':<10} |")
+    print(f"| {'Computer Guessing Number':<36} | {'Not Played':<10} |")
 
 print("+--------------------------------------+------------+")
